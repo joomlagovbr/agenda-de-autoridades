@@ -49,6 +49,7 @@ class AgendaDirigentesModelAutoridades extends JModelList
                 $db->quoteName('car.featured', 'cargo_featured') . ', ' .
                 $db->quoteName('car.id', 'cargo_id') . ', ' .
                 $db->quoteName('car.name', 'cargo_name') . ', ' .
+                $db->quoteName('car.name_f', 'cargo_name_f') . ', ' .
                 $db->quoteName('car.catid') . ', ' .
                 $db->quoteName('cat.level') . ', ' .
                 $db->quoteName('cat.path') . ', ' .
@@ -57,6 +58,7 @@ class AgendaDirigentesModelAutoridades extends JModelList
                 $db->quoteName('dir.id', 'dir_id') . ', ' .
                 $db->quoteName('dir.name', 'dir_name') . ', ' .
                 $db->quoteName('dir.interino') . ', ' .
+                $db->quoteName('dir.sexo') . ', ' .
                 $db->quoteName('dir.em_atividade')
                 )->from(
                 $db->quoteName('#__agendadirigentes_cargos', 'car')

@@ -42,7 +42,14 @@ $this->document->addStylesheet( JURI::root().'media/com_agendadirigentes/css/fro
 			<?php endif; ?>
 
 			<li class="autoridades-item">
-				<a href="index.php?option=com_agendadirigentes&view=autoridade&id=<?php echo $item->dir_id ?>&dia=<?php echo $this->params->get('dia', ''); ?>"><strong><?php echo $item->cargo_name ?></strong><br />
+				<a href="index.php?option=com_agendadirigentes&view=autoridade&id=<?php echo $item->dir_id ?>&dia=<?php echo $this->params->get('dia', ''); ?>">
+                                    <strong>
+                                    <?php if($item->dir_sexo == "M"){
+                                                    echo $item->cargo_name;
+                                            } else {
+                                                    echo $item->cargo_name_f;
+                                            }?>
+                                    </strong><br />
 				<?php echo $item->dir_name ?></a>
 			</li>
 
