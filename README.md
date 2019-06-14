@@ -1,3 +1,8 @@
+Atenção: essa versão precisa ser atualizada.
+=====================
+Dê preferência a utilizar o pacote completo em joomla.
+
+
 Componente de agenda de autoridades para Joomla 3.x
 =====================
 
